@@ -17,7 +17,7 @@ def find_files(directory, pattern):
 for file in find_files(sys.argv[1], 'R.java'):
 	f = open(file, 'r')
 	fparray = file.split('/')
-	#path = '.'.join(fparray[fparray.index("src")+1:-1]) + "."
+	path = '.'.join(fparray[fparray.index("src")+1:-1]) + "."
 	print "Processing: " + file
 	for line in f:
 		line = line.strip()
